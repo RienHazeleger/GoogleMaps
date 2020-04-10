@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
 		type="text/css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<script defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCcLt4XUOQEsnIGV1vBWyxWaj14xJ6Iuw&callback=initMap">
+	</script>
 </head>
 
 <body>
@@ -186,8 +189,8 @@
 			</div>
 		</div>
 	</footer>
-    <script>
-        function initMap() {
+	<script>
+		function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
             zoom: 3,
             center: {
@@ -214,11 +217,8 @@
        var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
-    </script>
-	<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
-	<script async defer
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCcLt4XUOQEsnIGV1vBWyxWaj14xJ6Iuw&callback=initMap">
 	</script>
+	<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
 </body>
 
 </html>
